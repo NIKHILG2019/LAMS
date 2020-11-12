@@ -19,7 +19,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aba2ab4c-3272-466c-9844-9c64dcef44d8" name="Default Changelist" comment="Header,Footer added.&#10;Student Dashboard and login page added." />
+    <list default="true" id="aba2ab4c-3272-466c-9844-9c64dcef44d8" name="Default Changelist" comment="Error Fixes">
+      <change afterPath="$PROJECT_DIR$/resources/views/registeration.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student_database.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -156,11 +161,12 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager">
@@ -178,7 +184,8 @@
       <option name="presentableId" value="Default" />
       <updated>1602141237575</updated>
       <workItem from="1602141239089" duration="580000" />
-      <workItem from="1602152891748" duration="1315000" />
+      <workItem from="1602152891748" duration="1454000" />
+      <workItem from="1605198143896" duration="661000" />
     </task>
     <task id="LOCAL-00001" summary="Header,Footer added.&#10;Student Dashboard and login page added.">
       <created>1602154075268</created>
@@ -187,7 +194,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602154075268</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Error Fixes">
+      <created>1602154320823</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1602154320823</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -208,13 +222,38 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Header,Footer added.&#10;Student Dashboard and login page added." />
-    <option name="LAST_COMMIT_MESSAGE" value="Header,Footer added.&#10;Student Dashboard and login page added." />
+    <MESSAGE value="Error Fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Error Fixes" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1602154090663">
+    <state x="361" y="70" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605198497674">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1602154090663" />
+    <state x="361" y="70" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1605198497674" />
+    <state width="1024" height="210" key="GridCell.Tab.0.bottom" timestamp="1605198543767">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1024" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1605198543767" />
+    <state width="1024" height="210" key="GridCell.Tab.0.center" timestamp="1605198543766">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1024" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1605198543766" />
+    <state width="1024" height="210" key="GridCell.Tab.0.left" timestamp="1605198543766">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1024" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1605198543766" />
+    <state width="1024" height="210" key="GridCell.Tab.0.right" timestamp="1605198543766">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1024" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1605198543766" />
+    <state x="277" y="57" key="SettingsEditor" timestamp="1605198282884">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="277" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1605198282884" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1602154327168">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1602154327168" />
     <state x="586" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1602141297971">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

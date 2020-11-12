@@ -19,3 +19,6 @@ Route::get('/', function () {
 Route::get('/StudentDashboard', function (){
   return view('DashboardStudent');
 });
+Route::get('/registeration.html',function () {
+   return view('registeration');
+});
