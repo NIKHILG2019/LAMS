@@ -1,7 +1,5 @@
 <?php
-
 use Illuminate\Support\Facades\Route;
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -12,7 +10,10 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+Route::post('/status', 'App\Http\Controllers\Regcontrol@reg');
+Route::get('/status', function (){
+    return view('status');
+});
 Route::get('/', function () {
     return view('LoginPage');
 });

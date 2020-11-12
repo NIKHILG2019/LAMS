@@ -45,7 +45,8 @@
     </p>
 </div>
 <div class="containerform">
-    <form action="/" class="regform" method="GET">
+    <form action="/status" class="regform" method="POST">
+        @csrf
         <div class="form-row">
             <div class="form-group col-md-3">
                 <label for="first_name">First Name<span class="text-danger">*</span></label>
