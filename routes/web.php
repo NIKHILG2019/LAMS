@@ -25,3 +25,6 @@ Route::get('/registeration.html',function () {
 Route::get('/DashboardStudent',function () {
     return view('DashboardStudent');
 });
+Route::get('/profile',function () {
+    return view('profile');
+});

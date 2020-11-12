@@ -10,7 +10,7 @@
                 <a href="/StudentDashboard" class="nav-link active">Dashboard</a>
             </li>
             <li class="nav-item">
-                <a href="#" class="nav-link">Profile</a>
+                <a href="/profile" class="nav-link">Profile</a>
             </li>
         </ul>
         <ul class="nav navbar-nav ml-auto">
