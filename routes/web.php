@@ -22,3 +22,6 @@ Route::get('/StudentDashboard', function (){
 Route::get('/registeration.html',function () {
    return view('registeration');
 });
+Route::get('/DashboardStudent',function () {
+    return view('DashboardStudent');
+});

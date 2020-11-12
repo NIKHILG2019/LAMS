@@ -15,7 +15,7 @@
 <body class="body">
   <div>
     <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-      <a href="/index.html" class="navbar-brand">LAMS</a>
+      <a href="/" class="navbar-brand">LAMS</a>
       <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -27,7 +27,7 @@
     </nav>
   </div>
   <div class="form-container bg-dark text-light">
-    <form action="index.html" class="regform" methord="POST" onsubmit="return formValidation()">
+    <form action="/DashboardStudent" class="regform" methord="POST" onsubmit="return formValidation()">
       <div class="form-row">
         <div class="form-group col-md-12">
           <label for="loginPage">

@@ -45,7 +45,7 @@
     </p>
 </div>
 <div class="containerform">
-    <form action="LoginPage.html" class="regform" method="GET">
+    <form action="/" class="regform" method="GET">
         <div class="form-row">
             <div class="form-group col-md-3">
                 <label for="first_name">First Name<span class="text-danger">*</span></label>
