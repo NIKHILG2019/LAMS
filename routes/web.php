@@ -29,3 +29,4 @@ Route::get('/DashboardStudent',function () {
 Route::get('/profile',function () {
     return view('profile');
 });
+Route::post('/LoginStatus','App\Http\Controllers\StudentDashboard@attendance');

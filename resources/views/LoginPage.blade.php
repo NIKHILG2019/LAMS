@@ -27,7 +27,8 @@
     </nav>
   </div>
   <div class="form-container bg-dark text-light">
-    <form action="/DashboardStudent" class="regform" methord="POST" onsubmit="return formValidation()">
+    <form action="/LoginStatus" class="regform" method="POST" onsubmit="return formValidation()">
+        @csrf
       <div class="form-row">
         <div class="form-group col-md-12">
           <label for="loginPage">
@@ -62,6 +63,7 @@
       <div class="form-row">
         <button type="submit" class="btn btn-lg btn-block btn-outline-light">Submit</button>
       </div>
+    </form>
       <br>
       <h4>OR</h4>
       <br>
@@ -70,7 +72,6 @@
           <button type="button" class=" reg btn btn-lg btn-block btn-outline-light">Register</button>
         </div>
       </form>
-    </form>
   </div>
 </body>
 <script>

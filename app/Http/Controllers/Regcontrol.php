@@ -3,11 +3,13 @@
 namespace App\Http\Controllers;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
+use Symfony\Component\Console\Input\Input;
 
 class Regcontrol extends Controller
 {
     public function reg(Request $req)
     {
+        $enrollmentNumber = $req->EnrollmentNumber;
         $firstName = $req->firstName;
         $middleName = $req->middleName;
         $lastName = $req->lastName;
@@ -26,10 +28,15 @@ class Regcontrol extends Controller
             ->where('Roll_No','=',$rollNo)
             ->where('class_id','=',$class_id)
             ->where('Email','=',$email1)->count();
-        echo $check;
         if($check == 0 )
         {
-            DB::insert('insert into student values(?,?,?,?,?,?,?,?,?,?,?)',array("123",$rollNo,$firstName,$middleName,$lastName,$email1,$studentPhone,$parentPhone,3,$passwrd,$class_id));
+            try {
+                DB::insert('insert into student values(?,?,?,?,?,?,?,?,?,?,?)',array($enrollmentNumber,$rollNo,$firstName,$middleName,$lastName,$email1,$studentPhone,$parentPhone,3,$passwrd,$class_id));
+            }
+            catch (\Illuminate\Database\QueryException $ex)
+            {
+                   return back()->withErrors($ex->getCode())->withInput();
+            }
             return redirect('/');
         }
         else

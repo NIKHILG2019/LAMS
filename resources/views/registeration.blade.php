@@ -14,7 +14,6 @@
         var ok;
     </script>
 </head>
-
 <body class="body">
 <div>
     <nav class="navbar navbar-expand-md navbar-dark bg-dark">
@@ -32,6 +31,37 @@
         </div>
     </nav>
 </div>
+@if($errors->any())
+
+        <div class="alert alert-danger" role="alert">
+            <ul>
+            @foreach ($errors->all() as $error)
+                @if($error == 12345)
+                    <li>There is a problem in Roll No.</li>
+                @endif
+                @if($error == 23456)
+                    <li>There is a problem in First Name</li>
+                @endif
+                @if($error == 34567)
+                    <li>There is a problem in Middle Name</li>
+                @endif
+                @if($error == 45678)
+                    <li>There is a problem in Last Name</li>
+                @endif
+                @if($error == 56789)
+                    <li>There is a problem with Email Pls use VES official email</li>
+                @endif
+                @if($error == 67891)
+                    <li>There is a problem with your phone number Pls check</li>
+                @endif
+                @if($error == 78912)
+                    <li>There is a problem with your phone number Pls check</li>
+                @endif
+            @endforeach
+            </ul>
+        </div>
+
+@endif
 <div class="information">
     <h2 class="text-dark">Student Entry</h2><br>
     <p id="cb">
@@ -48,6 +78,10 @@
     <form action="/status" class="regform" method="POST">
         @csrf
         <div class="form-row">
+            <div class="form-group col-md-3">
+                <label for="Enrollment_Number">Enrollment_Number<span class="text-danger">*</span></label>
+                <input name="EnrollmentNumber" type="text" class="form-control" placeholder="Enrollment Number">
+            </div>
             <div class="form-group col-md-3">
                 <label for="first_name">First Name<span class="text-danger">*</span></label>
                 <input name="firstName" type="text" class="form-control" placeholder="Your Name">
@@ -70,8 +104,6 @@
                 <label for="phone_number_student">Parent's Email<span class="text-danger">*</span></label>
                 <input name="email2" type="email" class="form-control" placeholder="example@gmail.com">
             </div>
-        </div>
-        <div class="form-row">
             <div class="form-group col-md-3">
                 <label for="phone_number_student">Student's Phone Number<span class="text-danger">*</span></label>
                 <input name="studentPhone" type="number" class="form-control" placeholder="xxxxxxxxxx">
@@ -81,7 +113,6 @@
                 <input name="parentPhone" type="number" class="form-control" placeholder="xxxxxxxxxx">
             </div>
         </div>
-
         <div class="form-row">
             <div class="form-group col-md-3">
                 <label for="class">Select Your Class<span class="text-danger">*</span></label>
@@ -97,8 +128,6 @@
                 <label for="roll_no.">Roll Number<span class="text-danger">*</span></label>
                 <input name="rollNo" type="number" class="form-control" placeholder="Eg. 18">
             </div>
-        </div>
-        <div class="form-row">
             <div class="form-group col-md-3">
                 <label for="password">Password<span class="text-danger">*</span></label>
                 <input name="new-passoword" type="password" class="form-control" placeholder="Enter your password" id="password">
