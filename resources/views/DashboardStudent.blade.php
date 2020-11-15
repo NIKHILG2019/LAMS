@@ -16,7 +16,7 @@
   <div class="subject">
   <div class="overall row">
     <div class="col-1.5 bold title">
-      OVERView
+      SUMMARY
     </div>
     <div class=" totalCard col-3 bold">
       <div>
@@ -103,3 +103,7 @@
 @include('footer')
 </body>
 </html>
+<script>
+        var values = {!! json_encode(Session::get('values'), JSON_HEX_TAG) !!}
+        console.log(values);
+</script>
